@@ -1,5 +1,5 @@
 from faker import Faker
-from random import radint, choice
+from random import randint, choice
 
 from database import customers, products, sales
 from models.customer import Customer

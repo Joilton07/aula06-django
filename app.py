@@ -1,6 +1,6 @@
 import commands as cmd
 
-from services.customers import create_customer, list_customers
+from services.customers import create_customer, list_customer
 from services.fakes import seeder
 from services.products import create_product, list_products
 from services.sales import create_sale, financial, list_sales
@@ -21,7 +21,7 @@ while run:
         create_customer(name, age, email)
 
     if command == cmd.CMD_LIST_CUSTOMER:
-        list_customers()
+        list_customer()
 
     if command == cmd.CMD_CREATE_PRODUCT:
         name = input('Nome: ')
